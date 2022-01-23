@@ -26,7 +26,7 @@ export default function Header() {
             </h1>
             <div className="flex justify-start items-center mt-8 md:mt-4">
               <BsClock className="mr-4 text-[1.5rem] md:text-[1.75rem]" />
-              <h1 className="text-[1.1rem] md:text-[1.75rem] text-indigo-600">
+              <h1 className="text-[1.1rem] md:text-[1.55rem] text-indigo-600">
                 4th, 5th and 6th February, 2022
               </h1>
             </div>
@@ -41,12 +41,12 @@ export default function Header() {
             </p>
             <div className="flex justify-start mt-16 mb-8">
               <a href={"https://docs.google.com/forms/d/e/1FAIpQLSeLLpwaBXdXQL3FaVosbDmHhZE1qNXptmwyA8f3zdl78KjaQQ/viewform"}>
-              <button className=" bg-[#3C64B1] rounded  text-base md:text-lg text-white  hover:shadow-xl ease-in-out duration-300 py-2 px-3 mr-2">
+              <button className=" bg-[#3C64B1] rounded  text-base md:text-lg text-white  hover:shadow-xl ease-in-out duration-300 border-2 border-[#1B4996] py-2 px-3 mr-2">
                 Register Now
               </button>
               </a>
               
-              <a href="https://drive.google.com/file/d/1hT4FtlaaNycBbJRVKJ4FNv7xd6wKiaB3/view?usp=sharing">
+              <a href={"https://drive.google.com/file/d/1hT4FtlaaNycBbJRVKJ4FNv7xd6wKiaB3/view?usp=sharing"}>
                 <button className="ease-in-out duration-300 hover:text-white hover:bg-[#3C64B1] border-2 border-[#1B4996] text-base md:text-lg text-[#1B4996] rounded py-2 px-3">
                   See Brochure
                 </button>

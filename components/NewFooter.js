@@ -22,8 +22,8 @@ export default function NewFooter() {
     return (
         <>
             <div className=" mt-10 py-10  bg-[#F9F9F9] w-[100%] px-4">
-                <div className="w-full flex justify-center">
-                     <h1 className='text-xl'>email us at <a className="text-blue-600" href="mailto:gsdc.explore@gmail.com">gdsc.explore@gmail.com</a></h1>
+                <div className="w-full ">
+                     <h1 className='text-xl text-center'>email us at <a className="text-blue-600" href="mailto:gsdc.explore@gmail.com">gdsc.explore@gmail.com</a></h1>
                 </div>
 
                 <div className="container my-6 w-full">
@@ -34,7 +34,7 @@ export default function NewFooter() {
 
                                 <div className='md:ml-[10vw]'>
                                     <Image src={GDSCexplore} height={150} width={150} />
-                                    <h1 className='text-center text-lg -mt-4'>Website Developers</h1>
+                                    <h1 className='text-center w-full text-lg -mt-4'>Website Developers</h1>
                                 </div>
 
 
