@@ -32,7 +32,7 @@ export default function Footer() {
                 <textarea placeholder='Type Your Query Here' className='relative w-[70%] h-[10rem] rounded border-[1px] border-[#0176FA] px-2 py-1 top-[4rem] md:w-[31.6rem] md:h-[10rem] md:top-[1.5rem] md:left-[10.75rem]'></textarea>
                 <button className="relative bg-[#3C64B1] rounded  text-base md:text-lg text-white w-[25%] md:top-[3rem] md:left-[1rem] top-[6rem] hover:shadow-xl ease-in-out duration-300 py-2 px-3 mr-2">
                 Submit
-              </button>
+                </button>
             </div>
         </>
     );

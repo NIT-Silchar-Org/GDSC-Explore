@@ -4,7 +4,7 @@ export default function Faq() {
             <div className="flex justify-center w-full">
                 <div className="sm:px-6 flex flex-col sm:w-[80%] sm:py-14 w-full px-0 py-9 justify-center">
                     <h1 className="text-start text-[2rem] md:text-[48px] text-[#373F41] mb-5 text-center">FAQ</h1>
-                    <div className="space-y-2">
+                    <div className="space-y-2 cursor-pointer">
                         <div className="m=0 p-5 bg-[#f3f3f3] sm:rounded-lg rounded-none">
                             <details>
                                 <summary className="flex justify-between text-summary font-normal text-[#737B7D] hover:text-gray-800 hover:font-normal">Do I have to pay to take part in GDSC Explore?</summary>
