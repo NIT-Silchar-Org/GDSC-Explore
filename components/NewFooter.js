@@ -21,12 +21,12 @@ export default function NewFooter() {
 
     return (
         <>
-            <div className="container mt-10 py-10  bg-[#F9F9F9]">
+            <div className=" mt-10 py-10  bg-[#F9F9F9] w-[100%] px-4">
                 <div className="w-full flex justify-center">
-                     <h1 className='text-xl'>email us at <a className="text-blue-600" href="mailto:gsdc.explore@gmail.com">gsdc.explore@gmail.com</a></h1>
+                     <h1 className='text-xl'>email us at <a className="text-blue-600" href="mailto:gsdc.explore@gmail.com">gdsc.explore@gmail.com</a></h1>
                 </div>
 
-                <div className="container my-6">
+                <div className="container my-6 w-full">
                     <h1 className='text-3xl text-center my-8'>Contact Us</h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
