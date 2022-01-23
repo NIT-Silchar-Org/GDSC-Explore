@@ -64,7 +64,7 @@ export default function EventsLayout() {
         ):(
           <>
           <hr/>
-           <h1 className="text-2xl text-center my-4">We'll be updating soon...</h1>
+           <h1 className="text-2xl text-center my-4">We`&lsquo;`ll be updating soon...</h1>
           </>
          
         )}
