@@ -38,7 +38,7 @@ export default function CarouselNew() {
                   name={i.name}
                   title={i.title}
                   disable={false}
-                  linkedIn={"hello"}
+                  linkedIn={i.linkedIn}
                   twitter={""}
                 />
               </div>
