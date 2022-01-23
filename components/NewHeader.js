@@ -1,6 +1,7 @@
 import Lottie from "react-lottie";
 import animationData from "../public/lottie/explore-anime.json";
 import { BsClock } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Header() {
   const defaultOptions = {
@@ -43,9 +44,12 @@ export default function Header() {
                 Register Now
               </button>
               <a href="https://drive.google.com/file/d/1hT4FtlaaNycBbJRVKJ4FNv7xd6wKiaB3/view?usp=sharing">
-                <button className="ease-in-out duration-300 hover:text-white hover:bg-[#3C64B1] border-2 border-[#1B4996] text-base md:text-lg text-[#1B4996] rounded py-2 px-3">
-                  See Brochure
-                </button>
+                <Link href="https://drive.google.com/file/d/1hT4FtlaaNycBbJRVKJ4FNv7xd6wKiaB3/view?usp=sharing">
+                  <button className="ease-in-out duration-300 hover:text-white hover:bg-[#3C64B1] border-2 border-[#1B4996] text-base md:text-lg text-[#1B4996] rounded py-2 px-3">
+                    See Brochure
+                  </button>
+                </Link>
+                
               </a>
             </div>
           </div>

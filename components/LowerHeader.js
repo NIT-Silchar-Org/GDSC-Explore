@@ -40,7 +40,7 @@ export default function LowerHeader(){
                         <div className="rounded-[50%] overflow-hidden">
                             <Image src={Icon2} height={90} width={70}/>
                         </div>
-                        <div>4</div>
+                        <div>3</div>
                         <div>
                             Days of code
                         </div>
