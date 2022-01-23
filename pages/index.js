@@ -3,7 +3,7 @@ import EventsLayout from '../components/events/EventsLayout'
 import Speakers from '../components/speakers/Carousel'
 import Sponsors from '../components/Sponsors'
 import Faq from '../components/Faq'
-import NewFooter from '../components/NewFooter'
+import Footer from '../components/Footer'
 import NewHeader from '../components/NewHeader'
 import Ourteam from '../components/ourteam'
 import Navbar from '../components/Navbar'
@@ -45,7 +45,7 @@ export default function Home() {
         <Faq/>
       </div>
       <div id="footer-section">
-        <NewFooter/>
+        <Footer/>
       </div>
 
       </main>
