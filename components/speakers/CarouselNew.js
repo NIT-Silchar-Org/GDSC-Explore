@@ -30,7 +30,7 @@ export default function CarouselNew() {
           Speakers
     </h1>
     <div className=" flex justify-center ">
-      <div className="md:w-[600px] w-[100vw]">
+      <div className="md:w-[800px] w-[100vw]">
         <Carousel responsive={responsive}>
           {SpeakersData.map((i, index) => {
             return (
