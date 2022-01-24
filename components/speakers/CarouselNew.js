@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "./Card";
 import { SpeakersData } from "../../utils/speakersData";
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -36,6 +37,7 @@ export default function CarouselNew() {
               <div key={index} className="w-full py-10 flex justify-center mx-5 ">
                 <Card
                   name={i.name}
+                  img={i.img}
                   title={i.title}
                   disable={false}
                   linkedIn={i.linkedIn}
