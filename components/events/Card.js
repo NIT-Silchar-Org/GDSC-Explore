@@ -23,7 +23,7 @@ export default function Card({ event }) {
             <p className=" text-[14px] md:text-[12px] font-[300] text-paragraphColor leading-[22px] tracking-[0.3px] my-5">
               {event.description}
             </p>
-            <Link href={"/"}>
+            <Link href={event.link}>
               <a className="flex justify-start items-center text-indigo-600">
                 <p className="mr-1">Open</p>
                 <Image src={navigateicon} className="w-8 h-8" />

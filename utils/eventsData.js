@@ -1,16 +1,17 @@
 import cardImg1 from "../public/images/cardImg1.png"
 import cardImg2 from "../public/images/cardImg2.png"
 import cardImg3 from "../public/images/cardImg3.png"
-
+import kickStartImg from '../public/images/KickStart.png'
 export const  events =[
     // day 1:
-    // [
-    //     {
-    //         id:1,
-    //         title:"Switch To Backend",
-    //         img:cardImg1,
-    //         description :"Velit 1 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt "
-    //     },
+    [
+        {
+            id:1,
+            title:"Kickstart GDSC Explore 2022",
+            img:kickStartImg,
+            description :" Kickstart event marks the opening ceremony of this year's GDSC Explore 2022. ",
+            link:"https://gdsc.community.dev/e/m5t7y6/"
+        }
     //     {
     //         id:2,
     //         title:"Android Study Jams",
@@ -29,7 +30,7 @@ export const  events =[
     //         img:cardImg3,
     //         description :"Velit 3 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt "
     //     },
-    // ],
+    ]
 
     // // day 2:
 
@@ -74,7 +75,7 @@ export const  events =[
     //         img:cardImg2,
     //         description :"Velit 3 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt laborum duis laboris aliquip. Laboris in nulla do qui dolore ea irure aute quis."
     //     },
-    // ]
+    
 
 
 
