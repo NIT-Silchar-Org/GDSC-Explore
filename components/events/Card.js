@@ -9,7 +9,7 @@ export default function Card({ event }) {
         className="bg-offWhite p-4 rounded-[4px] border-[1px] border-borderColor transition ease-in-out delay-75 hover:shadow-md hover:shadow-indigo-400/40"
         id="card"
       >
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
           <div className="flex items-center">
             <div id="card-img">
               <Image src={event.img} />
