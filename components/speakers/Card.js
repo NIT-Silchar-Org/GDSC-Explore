@@ -8,7 +8,7 @@ export default function Card({ name, img, title, disable, twitter, linkedIn }) {
     <>
     
     
-        <div className={disable?"py-6 px-4 w-[200px] h-[250px] rounded-md bg-white shadow-md ":"py-6 px-4 w-[200px] h-[250px] rounded-md bg-white shadow-xl "}>
+        <div className={disable?"py-6 px-4 w-[200px] min-h-[275px] rounded-md bg-white shadow-md ":"py-6 px-4 w-[200px] min-h-[275px] rounded-md bg-white shadow-xl "}>
           <div className="w-full flex justify-center">
             <div className="rounded-full h-20 w-20 bg-gray-600"><Image src={img} className="rounded-full"/></div>
           </div>
