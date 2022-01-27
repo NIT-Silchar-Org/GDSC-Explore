@@ -2,6 +2,8 @@ import cardImg1 from "../public/images/cardImg1.png"
 import cardImg2 from "../public/images/cardImg2.png"
 import cardImg3 from "../public/images/cardImg3.png"
 import kickStartImg from '../public/images/Kickstart.png'
+import weAreHostingImg from '../public/images/WeAreHosting.png'
+
 export const  events =[
     // day 1:
     [
@@ -11,7 +13,14 @@ export const  events =[
             img:kickStartImg,
             description :" Kickstart GDSC Explore 2022,  With great enthusiasm and holding great hopes in the deepest corners of our heart, we invite you to the opening ceremony of GDSC Explore. Register here to join us in the opening ceremony, in presence of our keynote speaker for the day, Nikita Gandhi, Community Manager at Google Developers",
             link:"https://gdsc.community.dev/e/m5t7y6/"
-        }
+        },
+        {
+            id:2,
+            title:"We Are Hosting",
+            img:weAreHostingImg,
+            description :" Here at last we are kicking off our next event of GDSC explore 2022 with our speaker Usha Rengraju, Principal Data Scientist, founder of NeuroAI, Data Science consultant at Infinite-sum modeling. She will share her vast experience in Data Science. Throughout The Data Science Workshop, you'll take an engaging step-by-step approach to understanding data science and its applications.",
+            link:"https://gdsc.community.dev/e/mv5us6/"
+        },
     //     {
     //         id:2,
     //         title:"Android Study Jams",
