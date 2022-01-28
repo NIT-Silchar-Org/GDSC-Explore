@@ -2,7 +2,9 @@ import cardImg1 from "../public/images/cardImg1.png"
 import cardImg2 from "../public/images/cardImg2.png"
 import cardImg3 from "../public/images/cardImg3.png"
 import kickStartImg from '../public/images/Kickstart.png'
-import weAreHostingImg from '../public/images/WeAreHosting.png'
+import weAreHostingImg1 from '../public/images/WeAreHosting.png'
+import weAreHostingImg2 from '../public/images/WeAreHosting2.png'
+import techTalk from '../public/images/TechTalk.png'
 
 export const  events =[
     // day 1:
@@ -17,9 +19,16 @@ export const  events =[
         {
             id:2,
             title:"We Are Hosting",
-            img:weAreHostingImg,
+            img:weAreHostingImg1,
             description :" Here at last we are kicking off our next event of GDSC explore 2022 with our speaker Usha Rengraju, Principal Data Scientist, founder of NeuroAI, Data Science consultant at Infinite-sum modeling. She will share her vast experience in Data Science. Throughout The Data Science Workshop, you'll take an engaging step-by-step approach to understanding data science and its applications.",
             link:"https://gdsc.community.dev/e/mv5us6/"
+        },
+        {
+            id:3,
+            title:"We Are Hosting",
+            img:weAreHostingImg2,
+            description :" We all have been at times when we want someone to show us a roadmap to Data Science, its career options, its scope. Worry not, we welcome Sishir Kalita, Data Scientist @ARMSOFTECH.AIR. He will consult us on the career options and scope in Data Science and how much of a big chunk it holds in the development of Artificial Intelligence.",
+            link:"https://gdsc.community.dev/e/m8yrqu/"
         },
     //     {
     //         id:2,
@@ -39,11 +48,18 @@ export const  events =[
     //         img:cardImg3,
     //         description :"Velit 3 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt "
     //     },
-    ]
+    ],
 
     // // day 2:
 
-    // [
+    [
+        {
+            id:1,
+            title:"Tech Talk - Android",
+            img:techTalk,
+            description :" We are extremely exuberant to kick off our event under GDSC Explore 2022. Tech Talk with Shreyas Patil, a Google Developer Expert for Android, a self-taught developer with a variety of applications directly released onto the play store and numerous contributions to open source. Join us for an insightful session of GDSC Explore 2022",
+            link:"https://gdsc.community.dev/e/mczwgp/"
+        }
     //     {
     //         id:1,
     //         title:"Switch To Backend",
@@ -62,7 +78,7 @@ export const  events =[
     //         img:cardImg1,
     //         description :"Velit 3 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt laborum duis laboris aliquip. Laboris in nulla do qui dolore ea irure aute quis."
     //     },
-    // ],
+    ]
 
     // // day 3:
     // [
