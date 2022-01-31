@@ -5,6 +5,7 @@ import Img4 from "../public/speakers/4.jpg"
 import Img5 from "../public/speakers/5.jpg"
 import Img6 from "../public/speakers/6.jpg"
 import Img7 from "../public/speakers/7.jpg"
+import Img8 from "../public/speakers/8.jpg"
 
 export const SpeakersData =[
     
@@ -57,6 +58,13 @@ export const SpeakersData =[
         img:Img7,
         title:"Data Scientist Armsoftech.air",
         linkedIn:"https://www.linkedin.com/in/sishir-kalita-3a006120/"
+    },
+
+    {
+        name:"Samia Ashraf",
+        img:Img8,
+        title:"Flutter Developer Altaligence",
+        linkedIn:"https://www.linkedin.com/in/samia-ashraf-2a1a79149/"
     },
    
     // {
