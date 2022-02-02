@@ -5,6 +5,9 @@ import kickStartImg from '../public/images/Kickstart.png'
 import weAreHostingImg1 from '../public/images/WeAreHosting.png'
 import weAreHostingImg2 from '../public/images/WeAreHosting2.png'
 import techTalk from '../public/images/TechTalk.png'
+import gettingStartedOpenSource from '../public/images/openSource.jpeg'
+import internshipsAndPlacements from '../public/images/internshipPlacement.jpeg'
+
 
 export const  events =[
     // day 1:
@@ -78,28 +81,32 @@ export const  events =[
     //         img:cardImg1,
     //         description :"Velit 3 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt laborum duis laboris aliquip. Laboris in nulla do qui dolore ea irure aute quis."
     //     },
-    ]
+    ],
 
     // // day 3:
-    // [
-    //     {
-    //         id:1,
-    //         title:"Switch To Backend",
-    //         img:cardImg3,
-    //         description :"Velit 1 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt laborum duis laboris aliquip. Laboris in nulla do qui dolore ea irure aute quis."
-    //     },
-    //     {
-    //         id:2,
-    //         title:"Android Study Jams",
-    //         img:cardImg1,
-    //         description :"Velit 2 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt laborum duis laboris aliquip. Laboris in nulla do qui dolore ea irure aute quis."
-    //     },
+    [
+        {
+            id:1,
+            title:"Getting Started with Open Source",
+            img:gettingStartedOpenSource,
+            description :"The season of open source is going on! Join us along with our fellow GDSC's in a discussion about Open Source. Where our speaker Harsh Bardhan Mishra (GSOC '21) discuss their experiences in the vast field of Open Source and provide valuable insights for a beginner to get started with the journey of his own.",
+            link:"https://gdsc.community.dev/events/details/developer-student-clubs-indian-institute-of-information-technology-guwahati-presents-getting-started-with-open-source/"
+        },
+
+        {
+            id:2,
+            title:"Internships and Placements 101",
+            img:internshipsAndPlacements,
+            description :"Arsh Goyal will deliver a talk on Internship and placement.",
+            link:"https://gdsc.community.dev/events/details/developer-student-clubs-indian-institute-of-information-technology-guwahati-presents-internships-and-placements-101/"
+        },
     //     {
     //         id:3,
     //         title:"Google Cloud Intro",
     //         img:cardImg2,
     //         description :"Velit 3 nulla et laboris voluptate enim eu elit fugiat magna ex. Commodo ea sit sit proident incididunt laborum duis laboris aliquip. Laboris in nulla do qui dolore ea irure aute quis."
     //     },
+    ]
     
 
 
