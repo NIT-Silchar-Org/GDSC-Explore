@@ -1,10 +1,9 @@
-import cardImg1 from "../public/images/cardImg1.png"
-import cardImg2 from "../public/images/cardImg2.png"
-import cardImg3 from "../public/images/cardImg3.png"
 import kickStartImg from '../public/images/Kickstart.png'
 import weAreHostingImg1 from '../public/images/WeAreHosting.png'
 import weAreHostingImg2 from '../public/images/WeAreHosting2.png'
 import techTalk from '../public/images/TechTalk.png'
+import techTalk2 from '../public/images/TechTalk2.png'
+import flutterWorkshop from '../public/images/FlutterWorkshop.png'
 import gettingStartedOpenSource from '../public/images/openSource.jpeg'
 import internshipsAndPlacements from '../public/images/internshipPlacement.jpeg'
 
@@ -62,7 +61,23 @@ export const  events =[
             img:techTalk,
             description :" We are extremely exuberant to kick off our event under GDSC Explore 2022. Tech Talk with Shreyas Patil, a Google Developer Expert for Android, a self-taught developer with a variety of applications directly released onto the play store and numerous contributions to open source. Join us for an insightful session of GDSC Explore 2022",
             link:"https://gdsc.community.dev/e/mczwgp/"
-        }
+        },
+
+        {
+            id:2,
+            title:"Tech Talk - Flutter",
+            img:techTalk2,
+            description :" Want to kick off your development journey with Flutter? Join Us for having an awesome learning experience with Kamal Sree ma'am, Google Developer Expert (Dart & Flutter) and Google Community Interviewer, and Samia Ashraf ma'am, Flutter Developer at Altaligence, as our keynote speakers for the day.",
+            link:"https://gdsc.community.dev/e/mm2cwg/"
+        },
+
+        {
+            id:3,
+            title:"Flutter Workshop",
+            img:flutterWorkshop,
+            description :" GDSC Explore brings you, for the first time, Flutter Workshop. Join us at this hands-on event to learn the very basics of the vastly powerful and superior cross-platform framework, Flutter and build your first basic app in half an hour. All you'll need is the Flutter SDK and a working computer.",
+            link:"https://gdsc.community.dev/e/m9nzbp/"
+        },
     //     {
     //         id:1,
     //         title:"Switch To Backend",
