@@ -6,6 +6,7 @@ import techTalk2 from '../public/images/TechTalk2.png'
 import flutterWorkshop from '../public/images/FlutterWorkshop.png'
 import gettingStartedOpenSource from '../public/images/openSource.jpeg'
 import internshipsAndPlacements from '../public/images/internshipPlacement.jpeg'
+import crushTheGSoC from '../public/images/crushTheGSoC.png'
 
 
 export const  events =[
@@ -114,6 +115,14 @@ export const  events =[
             img:internshipsAndPlacements,
             description :"Arsh Goyal will deliver a talk on Internship and placement.",
             link:"https://gdsc.community.dev/events/details/developer-student-clubs-indian-institute-of-information-technology-guwahati-presents-internships-and-placements-101/"
+        },
+
+        {
+            id:3,
+            title:"Crush the GSoC",
+            img:crushTheGSoC,
+            description :"It's the time of the year when everyone talks about GSoC, a challenging and stimulating event that gives the participants a chance to contribute to the world of OpenSource parallel to a hefty stipend. Participating in GSoC can often be a headache for rookies: the process seems so confusing for the first time. To help students learn about GSoC, GDSC-Explore brings you the 'Crush the GSoC' session which is aimed to provide you a headstart in the world of OpenSource and will surely give you an edge over other candidates aiming for GSoC'22.",
+            link:"https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technology-nit-agartala-presents-crush-the-gsoc/"
         },
     //     {
     //         id:3,
