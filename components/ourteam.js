@@ -13,14 +13,6 @@ export default function Ourteam(){
                         Our Team
                     </div>
                 </div>
-                <div id='subheading' className="flex justify-center font-[300] mx-[10%] md:mx-[20%] text-[#737B7D] text-[18px] md:text-[25px] text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum et et diam.
-                </div>
-
-                {/* border-2 border-black */}
-
-
-
                 <div id="cards" className="flex flex-wrap justify-content mx-[4rem] md:mx-[19%] lg:mx-[15%] mt-[40px] mb-[10px]">
                     <div className='flex flex-col w-[100%] px-0 mb-6 sm:w-[50%] lg:w-[25%]'>
                         <Image src={LogoSvg}/>

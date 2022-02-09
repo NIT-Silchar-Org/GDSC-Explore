@@ -3,12 +3,12 @@ import LogoSvg from '../public/images/logo.svg'
 import Fork from '../public/fork.svg'
 import Icon2 from '../public/icon2.svg'
 import mic from '../public/Ellipse.svg'
-import eve from '../public/images/cardImg1.png'
+import eve from '../public/icons_workshop.svg'
 import AnimationText from '../components/AnimationText'
 
 export default function LowerHeader(){
     return (
-        <div className="bg-[#C2C2C2] bg-opacity-[0.1] pt-[70px] pb-[100px] md:pb-[120px]">
+        <div className="bg-[#C2C2C2] bg-opacity-[0.1] pt-[70px] pb-[100px] md:pb-[120px] relative">
         
         <div id="decor1" className="absolute inline-block translate-y-[-60px]">
             <Image src={Fork} height={150} width={110}/>
@@ -40,7 +40,7 @@ export default function LowerHeader(){
                         <div className="rounded-[50%] overflow-hidden">
                             <Image src={Icon2} height={90} width={70}/>
                         </div>
-                        <div>4</div>
+                        <div>3</div>
                         <div>
                             Days of code
                         </div>
@@ -57,10 +57,11 @@ export default function LowerHeader(){
                     </div>
 
                     <div className="rounded-[12px] w-[165px] flex flex-col items-center py-[30px] bg-[rgba(255,255,255,0.4)] shadow-[4px_4px_40px_rgba(145,145,145,0.11)]">
-                        <div className="rounded-[50%] overflow-hidden">
+                        <div className="overflow-hidden">
                             <Image src={eve} height={100} width={100}/>
                         </div>
-                        <div>5</div>
+                        {/* <div>5</div> */}
+                        <br/>
                         <div>Workshops</div>
                     </div>
                 </div>

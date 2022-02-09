@@ -28,8 +28,8 @@ export default function Navbar({ toggleSidebar }) {
 
   return (
     <>
-      <div className="sticky top-[0px] z-[10] container-fluid">
-        <div className="flex justify-between items-center bg-[rgba(205,235,255,0.3)] backdrop-blur-[12px] h-[5.5rem] shadow-[0px_4px_17px_rgba(0,0,0,0.1)] px-[5%] md:px-[8%]">
+      <div className="sticky top-[0px] z-[9999]  container-fluid">
+        <div className="flex justify-between items-center bg-[rgba(205,235,255,0.3)] bg-white h-[4.2rem] shadow-[0px_4px_17px_rgba(0,0,0,0.1)] px-[5%] md:px-[8%]">
           <div className="flex flex-row items-center">
             <div className="pt-[8px] mb-[16px] mr-[10px]">
               <a onMouseEnter={handleHover} onMouseLeave={handleHover}>
@@ -41,7 +41,7 @@ export default function Navbar({ toggleSidebar }) {
                 />
               </a>
             </div>
-            <div className="font-[550] tracking-[0.5px]">GDSC Explore</div>
+            <div className="font-[550] text-[20px] tracking-[0.5px]">GDSC Explore</div>
           </div>
 
           <div className="flex">

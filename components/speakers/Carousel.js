@@ -1,84 +1,113 @@
-import Card from "./Card"
-import {BsCircleFill} from "react-icons/bs"
+import Card from "./Card";
+import { BsCircleFill } from "react-icons/bs";
 import { useState } from "react";
-import {SpeakersData} from "../../utils/speakersData"
+import { SpeakersData } from "../../utils/speakersData";
 
-
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function Carousel() {
+  const [activeData, setActiveData] = useState(SpeakersData.slice(0, 3));
 
+  const [activestartIndex, setActivestartIndex] = useState(0);
+  const [activeendIndex, setActiveendIndex] = useState(3);
 
-    const [activeIndex, setActiveIndex] = useState(2);
-    const changeIndex = (index) => {
-        setActiveIndex(index)
-    }
-    
-    
+  const moveBack = () => {
+    setActivestartIndex((prev) => {
+      return prev - 1;
+    });
+    setActiveendIndex((prev) => {
+      return prev - 1;
+    });
+  };
+  const moveForward = () => {
+    setActivestartIndex((prev) => {
+      return prev + 1;
+    });
+    setActiveendIndex((prev) => {
+      return prev + 1;
+    });
+  };
+  var clsName = "";
+  if (SpeakersData.length == 1) {
+    clsName =
+      "carousel-inner grid md:grid-cols-1 gap-4 grid-cols-1 h-[255px] overflow-hidden";
+  } else if (SpeakersData.length == 2) {
+    clsName =
+      "carousel-inner grid md:grid-cols-2 gap-4 grid-cols-1 h-[255px] overflow-hidden";
+  } else {
+    clsName =
+      "carousel-inner grid md:grid-cols-3 gap-4 grid-cols-1 h-[255px] overflow-hidden";
+  }
 
-
-    return(
-        <>
-            <div className="py-14 ">
-                <h1 className="text-[2rem] md:text-[48px] text-[#373F41] mb-[5rem] text-center">Speakers</h1>
-                <div className="w-full px-4 flex justify-center">
-                    <div id="carousel" >
-                        <div className="carousel-inner flex justify-center">
-                            {activeIndex==0?
-                            (
-                            <div className="carousel-item bg-gray-300  hidden md:block mx-2">
-                                <Card name={SpeakersData.at(-1).name} title={SpeakersData.at(-1).title} disable={true} linkedIn={SpeakersData.at(-1).linkedIn} twitter={SpeakersData.at(-1).twitter}/>
-                            </div>
-                            )
-                            
-                            :
-                            (
-                                <div className="carousel-item bg-gray-300  hidden md:block mx-2">
-                                    <Card name={SpeakersData[activeIndex-1].name} title={SpeakersData[activeIndex-1].title} disable={true} linkedIn={SpeakersData[activeIndex-1].linkedIn} twitter={SpeakersData[activeIndex-1].twitter}/>
-                                </div>
-                            )}
-                            
-
-                            {SpeakersData.map((i,index)=>{
-                                return(
-                                    <div key={index} className={index==activeIndex?"carousel-item active mx-2 animate-wiggle -translate-y-[1.5rem]":"carousel-item  mx-2 hidden"}>
-                                        <Card name={i.name} title={i.title} disable={false} linkedIn={i.linkedIn} twitter={i.twitter}/>
-                                    </div>
-                                )
-                            })}
-                            {activeIndex==SpeakersData.length-1?
-                            (
-                            <div className="carousel-item bg-gray-300  hidden md:block mx-2">
-                                <Card name={SpeakersData[0].name} title={SpeakersData[0].title} disable={true} linkedIn={SpeakersData[0].linkedIn} twitter={SpeakersData[0].twitter}/>
-                            </div>
-                            )
-                            
-                            :
-                            (
-                                <div className="carousel-item bg-gray-300  hidden md:block mx-2">
-                                    <Card name={SpeakersData[activeIndex+1].name} title={SpeakersData[activeIndex+1].title} disable={true} linkedIn={SpeakersData[activeIndex+1].linkedIn} twitter={SpeakersData[activeIndex+1].twitter}/>
-                                </div>
-                            )}
-                            
-                            
-                            
-                        </div>    
-                        <div className="flex justify-center mt-8">
-                            {SpeakersData.map((i,index)=>{
-                                return(
-                                    <button key={index} className={activeIndex==index?"mx-2 text-gray-800":"mx-2 text-gray-400"} onClick={()=>{changeIndex(index)}}>
-                                        <BsCircleFill/>
-                                    </button>
-
-                                )
-
-                            })}
-                            
-                            
-                        </div>
+  return (
+    <>
+      <div className="py-14 ">
+        <h1 className="text-[2rem] md:text-[48px] text-[#373F41] mb-[5rem] text-center">
+          Speakers
+        </h1>
+        <div className="w-full px-4 flex justify-center">
+          <div id="carousel" className="flex justify-center items-center">
+            {activestartIndex > 0 ? (
+              <button onClick={moveBack}>
+                <IoIosArrowBack className="text-4xl mr-4" />
+              </button>
+            ) : (
+              <button onClick={moveBack} disabled className="text-white">
+                <IoIosArrowBack className="text-4xl mr-4" />
+              </button>
+            )}
+            <div className={clsName}>
+              {SpeakersData.slice(activestartIndex, activeendIndex).map(
+                (i, index) => {
+                  return (
+                    <div key={index} className="carousel-item  md:block mx-2">
+                      <Card
+                        name={i.name}
+                        title={i.title}
+                        disable={false}
+                        linkedIn={"hello"}
+                        twitter={""}
+                      />
                     </div>
+                  );
+                }
+              )}
 
+              <div className="carousel-item md:hidden mx-2">
+                <Card
+                  name={SpeakersData[activestartIndex + 1].name}
+                  title={SpeakersData[activestartIndex + 1].title}
+                  disable={false}
+                  linkedIn={"hello"}
+                  twitter={""}
+                />
+              </div>
+              {SpeakersData.length > 3 &&(
+                  <div className="carousel-item  md:hidden mx-2">
+                  <Card
+                    name={SpeakersData[activestartIndex + 2].name}
+                    title={SpeakersData[activestartIndex + 2].title}
+                    disable={false}
+                    linkedIn={"hello"}
+                    twitter={""}
+                  />
                 </div>
+              )}
             </div>
-        </>
-    )
+
+            {activeendIndex <= SpeakersData.length+1 ? (
+              <button onClick={moveForward}>
+                <IoIosArrowForward className="text-4xl ml-4" />
+              </button>
+            ) : (
+              <button onClick={moveForward} disabled className="text-white">
+                <IoIosArrowForward className="text-4xl ml-4" />
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
