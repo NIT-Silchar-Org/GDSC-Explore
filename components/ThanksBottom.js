@@ -7,7 +7,7 @@ export default function ThanksUpper(){
 
     const variants={
         hidden:{scale: 0.1, opacity: 0},
-        visible:{scale: 1, opacity: 1, transition:{delay: .4}},
+        visible:{scale: 1, opacity: 1, transition:{delay: .7}},
     };
 
     return(
@@ -17,8 +17,6 @@ export default function ThanksUpper(){
             </div>
             <motion.div initial="hidden" animate="visible" variants={variants}>
                 <div className="flex flex-col items-center md:flex-row-reverse md:justify-around md:items-start">
-
-
                     <div id="picHolder" className="mt-[3rem] md:mt-[7rem] h-[17.5rem] w-[17.5rem] bg-white   rotate-[12deg]">
                         <div className="picWrapper relative top-[1.7rem] left-[0.6rem] h-[15rem] w-[16rem] border border-black">
                             {/* <Image/> */}
