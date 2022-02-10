@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import ThanksUpper from "../components/ThanksUpper";
+import ThanksBottom from "../components/ThanksBottom";
 import { useState } from 'react'
 
 export default function ThankYou(){
@@ -13,10 +14,10 @@ export default function ThankYou(){
 
             <main className={toggle ? 'h-[80vh] overflow-hidden':""}>
             <div className="thanks-top">
-               <ThanksUpper />
+               {/* <ThanksUpper /> */}
             </div>
             <div className="thanks-bottom">
-                Content here
+                <ThanksBottom/>
             </div>
             </main>
         </>
