@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Head from 'next/head'
-
+import { ParallaxProvider } from 'react-scroll-parallax';
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -12,8 +12,11 @@ function MyApp({ Component, pageProps }) {
         <title>GDSC Explore</title>
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
-      
+      <ParallaxProvider>
+
       <Component {...pageProps} />
+      </ParallaxProvider>
+      
     </>
   )
 }

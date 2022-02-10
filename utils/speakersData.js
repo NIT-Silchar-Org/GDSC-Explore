@@ -11,6 +11,7 @@ export const SpeakersData =[
     
     {
         name:"Nikita Gandhi ",
+        username:"nikitagandhi",
         img:Img1,
         title:"Community Manager at Google Developers",
         linkedIn: "https://www.linkedin.com/in/nikita-gandhi01/",
@@ -19,6 +20,7 @@ export const SpeakersData =[
    
     {
         name:"Usha Rengaraju ",
+        username:"usharengaraju",
         img:Img2,
         title:"Data Scientist",
         linkedIn: "https://www.linkedin.com/in/usha-rengaraju-b570b7a2/",
@@ -27,6 +29,7 @@ export const SpeakersData =[
 
     {
         name:"Shreyas Patil",
+        username:"shreyaspatil",
         img:Img3,
         title:"Google Developer Expert",
         linkedIn:"https://www.linkedin.com/in/patil-shreyas/"
@@ -34,6 +37,7 @@ export const SpeakersData =[
 
     {
         name:"Harsh B. Mishra",
+        username:"harshbmishra",
         img:Img4,
         title:"Software Engineer Quansight",
         linkedIn:"https://www.linkedin.com/in/harshcasper/"
@@ -41,6 +45,7 @@ export const SpeakersData =[
 
     {
         name:"Kamal S.",
+        username:"kamals",
         img:Img5,
         title:"Google Dev Expert - Flutter",
         linkedIn:"https://www.linkedin.com/in/kamalshree/"
@@ -48,6 +53,7 @@ export const SpeakersData =[
 
     {
         name:"Arsh Goyal",
+        username:"arshgoyal",
         img:Img6,
         title:"Senior Software Engineer Samsung",
         linkedIn:"https://www.linkedin.com/in/arshgoyal/"
@@ -55,6 +61,7 @@ export const SpeakersData =[
 
     {
         name:"Sishir Kalita",
+        username:"sishirkalita",
         img:Img7,
         title:"Data Scientist Armsoftech.air",
         linkedIn:"https://www.linkedin.com/in/sishir-kalita-3a006120/"
@@ -62,6 +69,7 @@ export const SpeakersData =[
 
     {
         name:"Samia Ashraf",
+        username:"samiaashraf",
         img:Img8,
         title:"Flutter Developer Altaligence",
         linkedIn:"https://www.linkedin.com/in/samia-ashraf-2a1a79149/"

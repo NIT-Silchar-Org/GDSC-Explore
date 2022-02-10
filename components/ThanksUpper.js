@@ -3,6 +3,7 @@ import thanksHeading from "../public/thanksHeading.svg"
 import techStackLogos from "../public/techStackLogos.svg"
 import topBlue from "../public/topBlue.svg"
 
+
 export default function ThanksUpper(){
     return(
         <>
@@ -14,9 +15,9 @@ export default function ThanksUpper(){
                 <Image src={techStackLogos} height={400} />
                 </div>
             </div>
-            <div className="bottomImg">
+            {/* <div className="bottomImg">
                     <Image src={topBlue} />
-                </div>
+                </div> */}
         </>
     )
 }
