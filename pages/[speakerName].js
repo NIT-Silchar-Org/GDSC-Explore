@@ -14,7 +14,7 @@ export default function ThankYou(){
 
             <main className={toggle ? 'h-[80vh] overflow-hidden':""}>
             <div className="thanks-top">
-               {/* <ThanksUpper /> */}
+               <ThanksUpper />
             </div>
             <div className="thanks-bottom">
                 <ThanksBottom/>
