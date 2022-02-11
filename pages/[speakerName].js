@@ -11,8 +11,6 @@ import {
 } from "framer-motion";
 import { SpeakersData } from "../utils/speakersData";
 
-
-
 export default function ThankYou({ username }) {
   const [toggle, setToggle] = useState(false);
   const [speaker, setSpeaker] = useState(null);
@@ -35,41 +33,34 @@ export default function ThankYou({ username }) {
     });
   });
 
-
-
- useEffect(()=>{
-   setSpeaker(
-    SpeakersData.find((skr) => {
-      return skr.username === username;
-    })
-   )
- })
-  
-
- 
-
+  useEffect(() => {
+    setSpeaker(
+      SpeakersData.find((skr) => {
+        return skr.username === username;
+      })
+    );
+  });
 
   return (
     <>
       <Navbar toggleSidebar={toggleSidebar} />
 
       <main className={toggle ? "h-[80vh] overflow-hidden" : ""}>
-        <div className="hidden md:block">
-        <Parallax speed={-50}>
-          <div className="thanks-top mt-80" id="front">
-            <ThanksUpper />
-          </div>
-        </Parallax>
+        <div className="block">
+          <Parallax speed={-50}>
+            <div className="thanks-top mt-10 md:mt-80 block md:block" id="front">
+              <ThanksUpper />
+            </div>
+          </Parallax>
 
-        <Parallax speed={-90}>
-          <div className="thanks-bottom mt-80">
-            {speaker && <ThanksBottom img={speaker.img} />}
-          
-          </div>
-        </Parallax>
+          <Parallax speed={-90}>
+            <div className="thanks-bottom mt-10 md:mt-80">
+              {speaker && <ThanksBottom img={speaker.img} />}
+            </div>
+          </Parallax>
         </div>
 
-        <div className="block md:hidden">
+        {/* <div className="block md:hidden">
         
           <div className="thanks-top md:mt-80" id="front">
             <ThanksUpper />
@@ -82,8 +73,7 @@ export default function ThankYou({ username }) {
           
           </div>
    
-        </div>
-        
+        </div> */}
       </main>
     </>
   );
