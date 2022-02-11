@@ -36,12 +36,12 @@ export default function ThanksUpper({ img }) {
       </Parallax>
       {/* <Parallax speed={60}> */}
 
-      <div className="card absolute top-[4vh] md:relative md:mt-0 ">
+      <div className="card absolute top-[4vh] md:relative hidden md:block md:mt-0 ">
         <motion.div
           className="card-container"
           initial="hidden"
           whileInView="visible"
-        //   viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <motion.div variants={variants}>
             <div className="flex flex-col items-center md:flex-row-reverse md:justify-around md:items-start mt-10">
@@ -77,6 +77,52 @@ export default function ThanksUpper({ img }) {
           </motion.div>
         </motion.div>
       </div>
+
+
+      <div className="card absolute block md:hidden top-[4vh] md:relative md:mt-0 w-full  px-10">
+        <motion.div
+          className="card-container"
+          initial="hidden"
+          whileInView="visible"
+          
+        >
+          <motion.div variants={variants}>
+            <div className="flex flex-col items-center md:flex-row-reverse md:justify-around md:items-start mt-10">
+              <div
+                id="picHolder"
+                className="mt-[3rem] md:mt-[7rem] h-[17.5rem] w-[17.5rem] bg-white   rotate-[12deg]"
+              >
+                <div className="picWrapper relative top-[1.7rem] left-[0.6rem] h-[15rem] w-[16rem] border border-black">
+                  {/* <Image/> */}
+                  <Image src={img} />
+                </div>
+              </div>
+              <div className="mt-[4rem] h-[50rm] w-[23rem] rotate-[-8deg]">
+                <Image src={message} />
+                <div className="absolute top-[2.5rem] left-[3rem] h-[10rem] w-[18rem] bg-transparent">
+                  <p className="text-lg">THANK YOU</p>
+                </div>
+                <div className="absolute top-[7.5rem] left-[2.8rem] h-[10rem] w-[18rem] bg-transparent">
+                  <p className="font-thin text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tincidunt tellus neque diam, sed. Cursus malesuada elementum
+                    integer purus posuere bibendum velit. Gravida malesuada
+                    posuere lectus faucibus congue mattis. Platea aliquet et
+                    porta at. Vestibulum, neque, suspendisse elit turpis
+                    vulputate egestas vitae proin pellentesque. Elit tellus
+                    integer sit pellentesque malesuada velit. Odio velit, quis
+                    dolor sodales dignissim. Sed in pretium in purus. Gravida
+                    quis massa adipiscing pellentesque lacus amet ut facilisi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+
+
+
       {/* </Parallax> */}
 
       {/* <div className="card  block md:hidden p-10">
