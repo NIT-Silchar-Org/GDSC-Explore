@@ -55,7 +55,7 @@ export default function ThankYou({ username }) {
 
           <Parallax speed={-90}>
             <div className="thanks-bottom mt-10 md:mt-80">
-              {speaker && <ThanksBottom img={speaker.img} />}
+              {speaker && <ThanksBottom  img={speaker.img} name={speaker.name} gender ={speaker.gender} />}
             </div>
           </Parallax>
         </div>
@@ -66,7 +66,7 @@ export default function ThankYou({ username }) {
             </div>
           
             <div className="thanks-bottom mt-10 md:mt-80">
-              {speaker && <ThanksBottom img={speaker.img} />}
+              {speaker && <ThanksBottom img={speaker.img} name={speaker.name} gender ={speaker.gender} />}
             </div>
      
         </div>
