@@ -3,6 +3,8 @@ import ThanksUpper from "../components/ThanksUpper";
 import ThanksBottom from "../components/ThanksBottom";
 import { useState, useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
+import Image from "next/image";
+import {FiChevronsDown} from 'react-icons/fi';
 import {
   motion,
   useViewportScroll,
@@ -10,10 +12,12 @@ import {
   useMotionValue,
 } from "framer-motion";
 import { SpeakersData } from "../utils/speakersData";
+import mouseImg from "../public/images/mouse.png";
 
 export default function ThankYou({ username }) {
   const [toggle, setToggle] = useState(false);
   const [speaker, setSpeaker] = useState(null);
+  const [win, setWin] = useState(null);
 
   const toggleSidebar = () => {
     setToggle(!toggle);
@@ -31,6 +35,7 @@ export default function ThankYou({ username }) {
       }
       document.querySelector("#front").style.opacity = opacity;
     });
+    
   });
 
   useEffect(() => {
@@ -39,10 +44,35 @@ export default function ThankYou({ username }) {
         return skr.username === username;
       })
     );
+    setWin(window)
   });
 
+
+
+
+  const [visible, setVisible] = useState(true) 
+    
+  const toggleVisible = () => { 
+    const scrolled = document.documentElement.scrollTop; 
+    if (scrolled > 300){ 
+      setVisible(false) 
+    }  
+    else if (scrolled <= 0){ 
+      setVisible(true) 
+    } 
+  };
+  if(win){
+
+    win.addEventListener('scroll', toggleVisible); 
+  } 
+
   return (
-    <>
+    <div className="relative">
+      <div className={visible ?"fixed w-full md:bottom-10 flex justify-center z-10":"hidden w-full bottom-10  justify-center z-10"} >
+        <a href="#here" className="p-2 flex animate-bounce justify-center items-center rounded-full border-2 border-white bg-[#546CBF] shadow-md shadow-white/30" >
+          <FiChevronsDown className="text-white text-5xl"  width="50" height="50"/>
+        </a>
+      </div>
       <Navbar toggleSidebar={toggleSidebar} />
 
       <main className={toggle ? "h-[80vh] overflow-hidden" : ""}>
@@ -85,8 +115,11 @@ export default function ThankYou({ username }) {
           </div>
    
         </div> */}
+        <div id="here">
+
+        </div>
       </main>
-    </>
+    </div>
   );
 }
 export async function getServerSideProps(context) {

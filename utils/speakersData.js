@@ -77,7 +77,7 @@ export const SpeakersData =[
     {
         name:"Samia Ashraf",
         username:"samiaashraf",
-        gender:"Sir",
+        gender:"Ma'am",
         img:Img8,
         title:"Flutter Developer Altaligence",
         linkedIn:"https://www.linkedin.com/in/samia-ashraf-2a1a79149/"
