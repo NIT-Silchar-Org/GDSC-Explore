@@ -60,16 +60,12 @@ export default function ThanksUpper({ img }) {
                   <p className="text-lg">THANK YOU</p>
                 </div>
                 <div className="absolute top-[8.5rem] left-[2.8rem] h-[10rem] w-[25rem] bg-transparent">
-                  <p className="font-thin text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt tellus neque diam, sed. Cursus malesuada elementum
-                    integer purus posuere bibendum velit. Gravida malesuada
-                    posuere lectus faucibus congue mattis. Platea aliquet et
-                    porta at. Vestibulum, neque, suspendisse elit turpis
-                    vulputate egestas vitae proin pellentesque. Elit tellus
-                    integer sit pellentesque malesuada velit. Odio velit, quis
-                    dolor sodales dignissim. Sed in pretium in purus. Gravida
-                    quis massa adipiscing pellentesque lacus amet ut facilisi.
+                  <p className="font-thin text-sm ">
+                  We the members of GDSC Explore 2022 want to convey our most sincere thanks and gratitude to Nikita ma&apos;am for being the speaker of Kickstart, the inauguration of GDSC Explore 2022.
+
+Her words of wisdom and thought-provoking phrases and guidance surely had a vast impact on the young minds who must have got the inspiration to work for the better cause of the world by developing new ideas and bringing them to life.
+
+We are eagerly looking forward to hearing from her again.
                   </p>
                 </div>
               </div>
@@ -104,15 +100,11 @@ export default function ThanksUpper({ img }) {
                 </div>
                 <div className="absolute top-[7.5rem] left-[2.8rem] h-[10rem] w-[18rem] bg-transparent">
                   <p className="font-thin text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt tellus neque diam, sed. Cursus malesuada elementum
-                    integer purus posuere bibendum velit. Gravida malesuada
-                    posuere lectus faucibus congue mattis. Platea aliquet et
-                    porta at. Vestibulum, neque, suspendisse elit turpis
-                    vulputate egestas vitae proin pellentesque. Elit tellus
-                    integer sit pellentesque malesuada velit. Odio velit, quis
-                    dolor sodales dignissim. Sed in pretium in purus. Gravida
-                    quis massa adipiscing pellentesque lacus amet ut facilisi.
+                  We the members of GDSC Explore 2022 want to convey our most sincere thanks and gratitude to Nikita ma&apos;am for being the speaker of Kickstart, the inauguration of GDSC Explore 2022.
+
+Her words of wisdom and thought-provoking phrases and guidance surely had a vast impact on the young minds who must have got the inspiration to work for the better cause of the world by developing new ideas and bringing them to life.
+
+We are eagerly looking forward to hearing from her again.
                   </p>
                 </div>
               </div>

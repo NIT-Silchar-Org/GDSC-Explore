@@ -46,7 +46,7 @@ export default function ThankYou({ username }) {
       <Navbar toggleSidebar={toggleSidebar} />
 
       <main className={toggle ? "h-[80vh] overflow-hidden" : ""}>
-        <div className="block">
+        <div className="hidden md:block">
           <Parallax speed={-50}>
             <div className="thanks-top mt-10 md:mt-80 block md:block" id="front">
               <ThanksUpper />
@@ -58,6 +58,17 @@ export default function ThankYou({ username }) {
               {speaker && <ThanksBottom img={speaker.img} />}
             </div>
           </Parallax>
+        </div>
+        <div className="block md:hidden">
+
+            <div className="thanks-top mt-10 md:mt-80 block md:block" id="front">
+              <ThanksUpper />
+            </div>
+          
+            <div className="thanks-bottom mt-10 md:mt-80">
+              {speaker && <ThanksBottom img={speaker.img} />}
+            </div>
+     
         </div>
 
         {/* <div className="block md:hidden">
