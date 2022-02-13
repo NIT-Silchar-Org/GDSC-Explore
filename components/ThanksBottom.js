@@ -64,12 +64,13 @@ export default function ThanksUpper({ img ,name, gender}) {
                   Hello {name} {gender}, 
 
 We the members of the entire GDSC Explore team, want to convey our thanks to you for taking time off your busy schedule and being present in our event as the guest speaker. Your words of wisdom stirred our hearts and mind for a better cause. All thanks to your enlightening words of inspiration that the event was such a huge success.
-
+<br/>
 I also convey sincere thanks on behalf of the attendees who were thrilled to have you share your experiences, guidance and also to resolve some of the queries most face at some point or the other. No words will be enough to express our gratitude to you for gracing our event and stimulating our minds with creativeness and hearts with a desire to grow. 
-
+<br/>
 We are eagerly looking forward to our next interaction soon. We would pray for your well being and success in all endeavours and walks of life. 
-
+<br/>
 Regards, 
+<br/>
 Team GDSC Explore
                   </p>
                 </div>
@@ -108,12 +109,13 @@ Team GDSC Explore
                   Hello {name} {gender}, 
 
 We the members of the entire GDSC Explore team, want to convey our thanks to you for taking time off your busy schedule and being present in our event as the guest speaker. Your words of wisdom stirred our hearts and mind for a better cause. All thanks to your enlightening words of inspiration that the event was such a huge success.
-
+<br/>
 I also convey sincere thanks on behalf of the attendees who were thrilled to have you share your experiences, guidance and also to resolve some of the queries most face at some point or the other. No words will be enough to express our gratitude to you for gracing our event and stimulating our minds with creativeness and hearts with a desire to grow. 
-
+<br/>
 We are eagerly looking forward to our next interaction soon. We would pray for your well being and success in all endeavours and walks of life. 
-
+<br/>
 Regards, 
+<br/>
 Team GDSC Explore
                   </p>
                 </div>
