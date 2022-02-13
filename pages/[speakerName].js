@@ -12,7 +12,7 @@ import {
   useMotionValue,
 } from "framer-motion";
 import { SpeakersData } from "../utils/speakersData";
-import mouseImg from "../public/images/mouse.png";
+
 
 export default function ThankYou({ username }) {
   const [toggle, setToggle] = useState(false);
