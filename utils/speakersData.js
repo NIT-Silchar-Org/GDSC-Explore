@@ -50,7 +50,7 @@ export const SpeakersData =[
     {
         name:"Kamal S.",
         username:"kamals",
-        gender:"Sir",
+        gender:"Ma'am",
         img:Img5,
         title:"Google Dev Expert - Flutter",
         linkedIn:"https://www.linkedin.com/in/kamalshree/"
