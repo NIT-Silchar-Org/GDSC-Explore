@@ -10,7 +10,7 @@ import {
 import { Parallax } from "react-scroll-parallax";
 import { useEffect } from "react";
 
-export default function ThanksUpper({ img ,name, gender}) {
+export default function ThanksUpper({ img, name, gender }) {
   const variants = {
     hidden: { scale: 0.1, opacity: 0 },
     visible: { scale: 1, opacity: 1, transition: { delay: 0.2 } },
@@ -60,18 +60,33 @@ export default function ThanksUpper({ img ,name, gender}) {
                   <p className="text-lg">Letter of thanks</p>
                 </div>
                 <div className="absolute top-[8.5rem] left-[2.8rem] h-[10rem] w-[25rem] bg-transparent">
-                  <p className="font-thin text-sm ">
-                  Hello {name} {gender}, 
-
-We the members of the entire GDSC Explore team, want to convey our thanks to you for taking time off your busy schedule and being present in our event as the guest speaker. Your words of wisdom stirred our hearts and mind for a better cause. All thanks to your enlightening words of inspiration that the event was such a huge success.
-<br/>
-I also convey sincere thanks on behalf of the attendees who were thrilled to have you share your experiences, guidance and also to resolve some of the queries most face at some point or the other. No words will be enough to express our gratitude to you for gracing our event and stimulating our minds with creativeness and hearts with a desire to grow. 
-<br/>
-We are eagerly looking forward to our next interaction soon. We would pray for your well being and success in all endeavours and walks of life. 
-<br/>
-Regards, 
-<br/>
-Team GDSC Explore
+                  <p className="font-thin text-xs ">
+                    Hello {name} {gender}, We the members of the entire GDSC
+                    Explore team, want to convey our thanks to you for taking
+                    time off your busy schedule and being present in our event
+                    as the guest speaker. Your words of wisdom stirred our
+                    hearts and mind for a better cause. All thanks to your
+                    enlightening words of inspiration that the event was such a
+                    huge success.
+                    <br />
+                    <br />
+                    I also convey sincere thanks on behalf of the attendees who
+                    were thrilled to have you share your experiences, guidance
+                    and also to resolve some of the queries most face at some
+                    point or the other. No words will be enough to express our
+                    gratitude to you for gracing our event and stimulating our
+                    minds with creativeness and hearts with a desire to grow.
+                    <br />
+                    <br />
+                    We are eagerly looking forward to our next interaction soon.
+                    We would pray for your well being and success in all
+                    endeavours and walks of life.
+                    <br />
+                    <br />
+                    Regards,
+                    <br />
+                    <br />
+                    Team GDSC Explore
                   </p>
                 </div>
               </div>
@@ -80,13 +95,11 @@ Team GDSC Explore
         </motion.div>
       </div>
 
-
       <div className="card absolute block md:hidden top-[4vh] md:relative md:mt-0 w-full  px-10">
         <motion.div
           className="card-container"
           initial="hidden"
           whileInView="visible"
-          
         >
           <motion.div variants={variants}>
             <div className="flex flex-col items-center md:flex-row-reverse md:justify-around md:items-start mt-10">
@@ -102,21 +115,36 @@ Team GDSC Explore
               <div className="mt-[4rem] h-[50rm] w-[23rem] rotate-[-8deg]">
                 <Image src={message} />
                 <div className="absolute top-[2.5rem] left-[3rem] h-[10rem] w-[18rem] bg-transparent">
-                  <p className="text-lg">THANK YOU</p>
+                  <p className="text-lg">Letter of thanks</p>
                 </div>
                 <div className="absolute top-[7.5rem] left-[2.8rem] h-[10rem] w-[18rem] bg-transparent">
-                  <p className="font-thin text-sm">
-                  Hello {name} {gender}, 
-
-We the members of the entire GDSC Explore team, want to convey our thanks to you for taking time off your busy schedule and being present in our event as the guest speaker. Your words of wisdom stirred our hearts and mind for a better cause. All thanks to your enlightening words of inspiration that the event was such a huge success.
-<br/>
-I also convey sincere thanks on behalf of the attendees who were thrilled to have you share your experiences, guidance and also to resolve some of the queries most face at some point or the other. No words will be enough to express our gratitude to you for gracing our event and stimulating our minds with creativeness and hearts with a desire to grow. 
-<br/>
-We are eagerly looking forward to our next interaction soon. We would pray for your well being and success in all endeavours and walks of life. 
-<br/>
-Regards, 
-<br/>
-Team GDSC Explore
+                  <p className="font-thin text-[0.55rem]">
+                    Hello {name} {gender}, We the members of the entire GDSC
+                    Explore team, want to convey our thanks to you for taking
+                    time off your busy schedule and being present in our event
+                    as the guest speaker. Your words of wisdom stirred our
+                    hearts and mind for a better cause. All thanks to your
+                    enlightening words of inspiration that the event was such a
+                    huge success.
+                    <br />
+                    <br />
+                    I also convey sincere thanks on behalf of the attendees who
+                    were thrilled to have you share your experiences, guidance
+                    and also to resolve some of the queries most face at some
+                    point or the other. No words will be enough to express our
+                    gratitude to you for gracing our event and stimulating our
+                    minds with creativeness and hearts with a desire to grow.
+                    <br />
+                    <br />
+                    We are eagerly looking forward to our next interaction soon.
+                    We would pray for your well being and success in all
+                    endeavours and walks of life.
+                    <br />
+                    <br />
+                    Regards,
+                    <br />
+                    <br />
+                    Team GDSC Explore
                   </p>
                 </div>
               </div>
@@ -124,8 +152,6 @@ Team GDSC Explore
           </motion.div>
         </motion.div>
       </div>
-
-
 
       {/* </Parallax> */}
 
@@ -161,8 +187,6 @@ Team GDSC Explore
           </div>
         </div>
       </div> */}
-
-      
     </div>
   );
 }

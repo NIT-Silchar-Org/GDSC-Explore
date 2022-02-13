@@ -28,7 +28,7 @@ export default function Navbar({ toggleSidebar }) {
 
   return (
     <>
-      <div className="sticky top-[0px] z-[9999]  container-fluid z-0">
+      <div className="sticky top-[0px] z-[9999]  container-fluid ">
         <div className="flex justify-between items-center bg-[rgba(205,235,255,0.3)] bg-white h-[4.2rem] shadow-[0px_4px_17px_rgba(0,0,0,0.1)] px-[5%] md:px-[8%]">
           <div className="flex flex-row items-center">
             <div className="pt-[8px] mb-[16px] mr-[10px]">
@@ -83,7 +83,7 @@ export default function Navbar({ toggleSidebar }) {
       <div
         className={
           toggle
-            ? "bg-black bg-opacity-30 absolute inset-0 z-20 "
+            ? "bg-black bg-opacity-30 absolute inset-0 z-[999999] "
             : "bg-black bg-opacity-30 absolute inset-0 z-20 hidden"
         }
         onClick={() => {
